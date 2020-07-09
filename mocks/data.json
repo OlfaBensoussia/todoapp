@@ -15,5 +15,39 @@
       "name": "task3",
       "description": "Print todo 3"
     }
-  ]
+  ],
+  "Done": [
+    {
+      "id": 1,
+      "name": "done1",
+      "description": "Print done 1"
+    },
+    {
+      "id": 2,
+      "name": "done2",
+      "description": "Print done 2"
+    }
+  ],
+  "Inprogress": [
+  {
+    "id": 1,
+    "name": "task1",
+    "description": "Print inprogress 1"
+  },
+  {
+    "id": 2,
+    "name": "task2",
+    "description": "Print inprogress 2"
+  },
+  {
+    "id": 3,
+    "name": "task3",
+    "description": "Print inprogress 3"
+  },
+  {
+    "id": 4,
+    "name": "task4",
+    "description": "Print inprogress 4"
+  }
+]
 }
