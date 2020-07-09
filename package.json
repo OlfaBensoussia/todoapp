@@ -7,18 +7,24 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "mocks": "json-server --watch ./mocks/data.json  --routes mocks/routes.json --no-cors=true",
+    "proxy": "ng serve --proxy-config proxy.conf.json",
+    "proxymockserver": "concurrently — kill-others \"npm run mocks\" \"npm run proxy\""
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.6",
+    "@angular/cdk": "^10.0.1",
     "@angular/common": "~9.0.6",
     "@angular/compiler": "~9.0.6",
     "@angular/core": "~9.0.6",
     "@angular/forms": "~9.0.6",
+    "@angular/material": "^10.0.1",
     "@angular/platform-browser": "~9.0.6",
     "@angular/platform-browser-dynamic": "~9.0.6",
     "@angular/router": "~9.0.6",
+    "json-server": "^0.16.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
